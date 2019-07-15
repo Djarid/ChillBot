@@ -1,0 +1,31 @@
+{
+  "name": "chillbot",
+  "version": "0.0.0",
+  "description": "A Discord bot for Cohesive Light (CHL) Gaming clan",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Djarid/ChillBot.git"
+  },
+  "keywords": [
+    "division",
+    "clan",
+    "Cohesive",
+    "light",
+    "discord",
+    "bot"
+  ],
+  "author": "Djarid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Djarid/ChillBot/issues"
+  },
+  "homepage": "https://github.com/Djarid/ChillBot#readme",
+  "dependencies": {
+    "dateformat": "^3.0.3",
+    "discord.js": "^11.5.1"
+  }
+}
