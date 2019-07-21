@@ -50,15 +50,16 @@ module.exports = {
             .setColor('#0099ff')
             .setTitle(`${command.name}`)
             .setURL('https://discord.js.org/')
-            .setAuthor('Chillbot Commands', 'https://i.imgur.com/wSTFkRM.png', 'https://discord.js.org')
+            .attachFiles(['./images/chl_logo_50.png', './images/chl_logo_100.png'])
+            .setAuthor('Chillbot Commands', null, 'https://discord.js.org')
             .setDescription(`${command.description}`)
-            .setThumbnail('https://i.imgur.com/wSTFkRM.png')
+            .setThumbnail('attachment://chl_logo_100.png')
         if (command.aliases)  helpEmbed.addField('Aliases', `${command.aliases.join(', ')}`);
         if (command.usage)    helpEmbed.addField('Usage', `${command.usage}`);
         if (command.cooldown) helpEmbed.addField('Cooldown', `${command.cooldown}`);
         if (command.example)  helpEmbed.addField('Example', `${command.example}`);
         helpEmbed.setTimestamp();
-        helpEmbed.setFooter('Chillbot Command Help.', 'https://i.imgur.com/wSTFkRM.png');
+        helpEmbed.setFooter('Chillbot Command Help.', 'attachment://chl_logo_50.png');
 
         message.channel.send(helpEmbed);
     }
